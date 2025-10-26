@@ -1,0 +1,74 @@
+D:\NodeJsDay1>code .
+
+D:\NodeJsDay1>node one.js
+win32
+x64
+C:\Users\Balaji
+6527619072
+10.0.26100
+
+D:\NodeJsDay1>npm init -y
+Wrote to D:\NodeJsDay1\package.json:
+
+{
+  "name": "nodejsday1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "one.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+
+D:\NodeJsDay1>node two.js
+win32
+x64
+C:\Users\Balaji
+6461263872
+10.0.26100
+
+D:\NodeJsDay1>
+
+coding methods
+variable
+
+one.js
+
+var eid=101
+console.log(eid)
+function:
+
+function wish(){
+clg("gm")
+}
+wish()
+
+class:
+
+class employees{
+}
+let e1= employees
+
+object:
+
+let  emp{
+"eid":101,
+"ename":"Rahul"
+}
+clg(emp)
+
+
+to find type of operator                         non-premitives (multiple values)
+ premitives(holding one single value)                 object| 
+one.js                                         [] array {} object
+
+let price=397;
+let rating=5.5;
+console.log(typeof price)
+console.log(typeof price)

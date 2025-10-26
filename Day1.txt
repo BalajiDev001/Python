@@ -1,0 +1,71 @@
+python interpreted programming language
+java is a compiler based programming language
+
+
+
+python supports functional programming features
+two.python
+def greet();
+print ("Hello world")
+greet()
+greet()
+cmd>two.py
+
+
+oop:
+
+three.py 
+class test;
+def greet(self);
+print("hello world")
+
+
+scripting:
+hello world
+one.py
+print("hello world")
+cmd>one.py
+
+
+
+python inbuilt functions 45
+print()
+input()
+type()
+id()
+len()
+
+python errors are 25
+ie  indentation error
+se  syntax error
+te type error
+ve   variable error
+ne    name error
+ke   key error
+index errors
+file error 
+
+
+
+create :
+
+eid=101
+ename="rahul"
+esal=45999.36
+
+read:
+print(eid)
+print(ename)
+print(eloc)
+
+update:
+ename="rahul ji"
+print(ename)
+
+delete:
+del ename
+print(ename)    
+
+ans: name error
+
+

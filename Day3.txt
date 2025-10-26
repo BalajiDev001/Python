@@ -1,0 +1,250 @@
+Day3:
+
+python is based on inter pretator 
+conversts highlevel to low level(allocating & de alocating memory)
+human readable code to mission readable code(binary) 
+
+compiler performs line to line execution - if there is no syntax error it compile & execution ,,, if any syntax error occurs it will stop the compilation process ( no o/p)
+interpretator -  analyze source code if there is no syntax error it will execute,,,, if any syntax error  it execute line by line (intermediate result )
+
+variable : 
+eid=101
+ename="balaji"    // eid,ename is a variable name  101-literal value
+print(eid)   #101
+print(id(eid))  #112233
+
+function:
+def wish():       def-keyword  wish()-function name
+print('gm')
+print('ga')
+print('ge')
+                                               identifier : name in python program  for ex: eid ename wish account
+											   
+wish()
+
+
+class:
+class account:     class-keyword    account-name
+      pass                       ----- to maintain dummy block
+	  
+	  
+	  
+16-10-25 ( thursday )
+primitive data type holding only one valu eid=101;  eid-variable name ,101-literal value    |
+non primitive data type holding many values let eid=[101,102,103]                           |  (javascript)
+
+
+python data types: 14
+
+<class,int >
+<class,float >
+<class,str >
+<class,complex >
+<class,bool >
+<class,list >
+<class,tuple >
+<class,set >
+<class,dict >
+<class,bytes >
+<class,bytearray >
+<class,frozenset >
+<class,range >
+<class,nontype >
+
+
+mutable data types = changing 4
+immutable obj = 10
+
+in SET duplicates are not allowed  where tuple & list allows                    mutable and immutable datatypes or obj in google
+
+
+list bytearray set dict -- mutable means we will change
+
+
+b=bytes([10,20,30,40])
+          0  1 2   3
+		  b[0] = 100 ==> type error  : bcoz its immutable 
+		  bytes object does not supports item assignments
+		  
+		  
+		  
+		  ba=bytearray([10,20,30,40])
+		  ba[0]=100
+		  for value in ba;
+		  print(value)
+		  
+		     
+			 
+			 
+			 
+			 
+			 
+=============----------------------===========================------------------===========================			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+		  
+		  
+23-10-25(thursday):
+
+range:
+------
+In Python, range() is a built-in function that generates an immutable sequence of numbers. 
+It is commonly used in for loops to iterate a specific number of times or over a sequence of integers.
+
+range() --> Data type
+to generate sequence
+
+range([start],and,[stop])   [] is optional
+
+
+ex1:
+-----
+r=range(10)     #if not providing stating value it takes defaultly 0 
+print(r)
+print(type(r))		  
+		  
+
+
+
+
+
+
+
+print 1-10 using for loop
+ex:
+---
+
+	for num in range(1,11-1,1):
+    print(num)	  
+		  
+write a program to print from 100 - 10
+---------------------------------------
+ans:
+numbers=range(100,9,-1)
+for numm in numbers:
+    print(numm)    
+	
+print 5 10 15 20 .....50
+-------------------------
+ans:
+for num in range(5,51,5):   #(5-starting point,51-ending point,5--increse 5+5+5+5)
+    print(num)
+
+print 1 to 125 with 5 increse
+------------------------------
+ans:
+for num in range(1,125,5): #print 1-125 5+5+5
+    print(num)    
+--------------------------------------------------------------------------------------------------------------------------
+python dt
+
+arith : + - * % **(exponential ) // (floor div)
+logical: and or
+relational op: < > <= >=   == 
+unary op: not
+special op: 1.membership op: in  notin 2.identity op: is  isnot
+
+
+in python there is no incr/decr operators:
+bcoz in python there is no primitive and non primitive dt only objects 
+
+
+addition:
+
+a=10
+b=20  #a+b 30
+c=30.5 #a+c 40.5
+d="rahul" #a+d type error unable to add str and int 
+e="gandhi" #a+e type error unable to add str and int  
+f=True
+g=False
+
+print(a+b) #30
+print(a+c)  #40.5
+#print(a+d)#
+#print(a+e)#
+print(d+e) #rahulgandhi
+print(a+f) #11
+print(a+g) #10
+
+	
+
+===========----------------===================----------------------============
+24-10-25(friday)
+
+Special op:--> 
+membership operator : in notin
+identity operator:  is isnot		  
+
+ex:
+
+enames=["rg","sg","pg","nm"]
+
+
+print("rg" in enames)   #true
+print("RG" in enames)   #false
+
+print("mm" not in enames)  #true
+
+
+ex: 
+-----
+enames=["raghu","harish","gnanesh","vivek"]
+
+print("raghu" in enames)
+print("RAGHU" in enames)
+print("alia" not in enames)
+print("r" in enames)
+
+
+
+identity operator is a address comparision operator  : is is not  \
+ex: a=10 b=20 c=10    10 is for both a & b 
+
+== is for content or value comparison 
+is isnot  address comparison 
+
+print(id(a)) --- returns address of a
+
+ex:
+------
+a=10
+b=[10,20,30]
+c=[10,'rahul','raju']
+d=[10,20,30]
+ 
+print(id(a))
+print(id(b))
+print(id(b[0]))
+print(id(c[0]))
+
+
+print(a is b[0])
+print(a is b)
+print(b is c)
+print(a==b[0])
+print(b==d)
+
+control flow statements:
+------------------------
+cfs : 1.conditional statements : if st , if-else st , if-elif st,  if-elif-else st.
+       note:   in py there is no switch st
+      2.iterative statements    :  for loop ,  while loop  
+       note :  in py no do-while loop
+	   
+	   cmd>md class7(file in vs code created)   make directory
+	   
+	   
+	   
+ex:
+-----
+num=int(input('enter number:'))  #without using int it shows float values so in converts to int
+if num%2==0:
+    print('given number is even ')
+else:
+    print('given number is odd')
