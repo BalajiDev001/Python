@@ -248,3 +248,22 @@ if num%2==0:
     print('given number is even ')
 else:
     print('given number is odd')
+	
+	
+=================------------------========================------------------------============
+
+27-10-25(monday):
+for loop and while loop
+1.in py no - do while loop  intead of 
+
+
+ex of while:
+i=1
+while i<=10:
+    print('good morning')
+    i=i+1;
+    
+
+iterate our sequences using for loop:
+	
+
